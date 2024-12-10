@@ -86,7 +86,8 @@ a {
 
 @media (max-width: 700px) {
     .nav {
-        padding-inline: 12px;
+        padding-inline: 0;
+        padding-left: 12px;
     }
     .nav>.desktop {
         display: none;
@@ -96,6 +97,7 @@ a {
     }
     .burger>img {
         height: 50%;
+        width: 100%
     }
     .burger {
         display: flex;
@@ -105,6 +107,7 @@ a {
         height: 100%;
         cursor: pointer;
         background-color: #ffee00;
+        width: 2.8125rem;
     }
     .nav>.mobile:hover ul {
         display: block;
