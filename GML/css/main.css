@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo>.mobile {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url(../fonts/ONEST-BOLD.TTF) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Onest';
+    src: url(../fonts/ONEST-EXTRABOLD.TTF) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+/* Нав. панель */
+.nav {
+    background-color: #ffee00;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.875rem;
+    height: 2.8125rem;
+    position: sticky;
+    top: 0;
+}
+.nav>a {
+    display: flex;
+}
+.nav>a>.logo {
+    display: flex;
+    align-items: center;
+}
+.nav>a>.logo>p {
+    font-family: Onest;
+    font-weight: 800;
+    font-size: 1.25rem;
+    padding-left: 0.9375rem;
+    color: black;
+    margin: 0;
+}
+.nav>a>div>img {
+    height: 1.5625rem;
+    width: 1.5625rem;
+}
+.nav>.desktop {
+    display: flex;
+    align-content: center;
+    height: 100%;
+}
+.nav>.desktop>ul {
+    font-family: Onest;
+    font-weight: bold;
+    font-size: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.nav>.desktop>ul>a {
+    display: flex;
+    padding-inline: 0.75rem;
+    height: 100%;
+    align-items: center;
+    color: black;
+    transition: 0.3s;
+}
+.nav>.desktop>ul>a:hover {
+    background-color: #ffe600;
+    transition: 0.3s;
+}
+.nav>.mobile, .nav>.mobile>ul {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav {
+        padding-inline: 12px;
+    }
+    .nav>.desktop {
+        display: none;
+    }
+    .nav>.mobile {
+        display: block;
+    }
+    .burger>img {
+        height: 50%;
+    }
+    .burger {
+        display: flex;
+        border: 0;
+        padding: 0;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        background-color: #ffee00;
+    }
+    .nav>.mobile:hover ul {
+        display: block;
+        font-family: Onest;
+        font-weight: bold;
+        font-size: 0.75rem;
+        list-style: none;
+        margin: 0;
+        margin-right: -0.75rem;
+        padding: 0;
+        height: 100%;
+        align-items: center;
+    }
+    .nav>.mobile:hover ul>a {
+        display: flex;
+        background-color: #ffee00;
+        padding-inline: 0.75rem;
+        height: 100%;
+        align-items: center;
+        color: black;
+    }
+}
+@media (max-width: 450px) {
+    .logo>.mobile {
+        display: block;
+    }
+    .logo>.desktop {
+        display: none;
+    }
+}
