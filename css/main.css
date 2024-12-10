@@ -117,6 +117,8 @@ a {
         padding: 0;
         height: 100%;
         align-items: center;
+        position: absolute;
+        right: 12px;
     }
     .nav>.mobile:hover ul>a {
         display: flex;
