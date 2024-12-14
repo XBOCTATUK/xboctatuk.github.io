@@ -11,17 +11,17 @@
     <div class="nav">
         <a href="#" title="Перейти на главную страницу"><div class="logo">
             <img src="./image/gml cup.png" alt="#">
-            <p class="desktop">Geometry Major League</p>
-            <p class="mobile">GML</p>
+            <p class="logo-desktop">Geometry Major League</p>
+            <p class="logo-mobile">GML</p>
         </div></a>
-        <nav class="desktop">
+        <nav class="nav-desktop">
             <ul>
                 <a href="#" title="Перейти на главную страницу"><li>Главная</li></a>
                 <a href="##" title="Посмотреть информацию о турнире"><li>О турнире</li></a>
                 <a href="###" title="Посмотреть историю матчей и их итоги"><li>Матчи</li></a>
             </ul>
         </nav>
-        <nav class="mobile">
+        <nav class="nav-mobile">
             <button class="burger"><img src="./image/Burger.svg" alt="#"></button>
             <ul>
                 <a href="#"><li>Главная</li></a>
@@ -32,7 +32,29 @@
     </div>
 
     <div class="content">
-        <!-- Контент -->
+        <div class="content-left-pan"></div>
+        <div class="content-center">
+            <div class="announcement">
+                <!-- <p id="timer">СЛЕДУЮЩИЙ МАТЧ ЧЕРЕЗ: 00:37:34</p> -->
+                <p id="timer"></p>
+            </div>
+            <div class="last-match">
+                <p>НАШ ПОСЛЕДНИЙ МАТЧ:</p>
+                <iframe
+                width="480"
+                height="270"
+                src="https://www.youtube-nocookie.com/embed/tVvrb3d9HgY?si=jQ_5f_452YDE-AC6"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+                </iframe>
+                <a href="https://www.youtube.com/watch?v=tVvrb3d9HgY" target="_blank"><img src="https://i.ytimg.com/vi/tVvrb3d9HgY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCRsUfVGVJkoRRzhY2nFx1ETFu4CQ" alt=""></a>
+            </div>
+        </div>
+        <div class="content-right-pan"></div>
     </div>
+    <script src="./js/timer.js"></script>
 </body>
 </html>
