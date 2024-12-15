@@ -10,7 +10,6 @@ function updateTimer() {
         clearInterval(timerInterval);
         return;
     }
-
     const seconds = Math.floor((timeRemaining / 1000) % 60);
     const minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
     const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
@@ -18,7 +17,6 @@ function updateTimer() {
 
     countdownElement.textContent = `СЛЕДУЮЩИЙ МАТЧ ЧЕРЕЗ: ${days}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
-
 const timerInterval = setInterval(updateTimer, 1000);
 
 updateTimer();

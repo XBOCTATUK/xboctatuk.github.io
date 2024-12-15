@@ -5,7 +5,7 @@ const pages = [
     { id: 'tournament-page-m', path: '/tournament' },
     { id: 'matches-page', path: '/matches' },
     { id: 'matches-page-m', path: '/matches' },
-    { id: 'home-page-logo', path: '/home' }
+    { id: 'home-page-logo', path: '/home'}
 ];
 
 pages.forEach(({ id, path }) => {
