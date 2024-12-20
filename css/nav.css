@@ -10,6 +10,12 @@
     font-weight: 800;
     font-style: normal;
 }
+.not-active {
+    display: none;
+}
+.is-active-block {
+    display: block;
+}
 
 .nav {
     background-color: #ffee00;
@@ -72,7 +78,7 @@
     background-color: #ffe600;
     transition: 0.3s;
 }
-.nav-mobile, .nav-mobile>ul {
+.nav-mobile {
     display: none;
 }
 
@@ -101,8 +107,7 @@
         background-color: #ffee00;
         width: 45px;
     }
-    .nav-mobile:hover ul {
-        display: block;
+    .nav-mobile>ul {
         font-family: Onest;
         font-weight: bold;
         font-size: 12px;
@@ -115,7 +120,7 @@
         position: absolute;
         right: 12px;
     }
-    .nav-mobile:hover ul>a {
+    ul>a {
         display: flex;
         background-color: #ffee00;
         padding-inline: 12px;

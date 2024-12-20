@@ -1,19 +1,19 @@
 const pages = [
-    { id: 'home-page', path: '/home' },
-    { id: 'home-page-m', path: '/home' },
-    { id: 'tournament-page', path: '/tournament' },
-    { id: 'tournament-page-m', path: '/tournament' },
-    { id: 'matches-page', path: '/matches' },
-    { id: 'matches-page-m', path: '/matches' },
-    { id: 'home-page-logo', path: '/home'}
+    { id: 'home-page', address: '/home' },
+    { id: 'home-page-m', address: '/home' },
+    { id: 'tournament-page', address: '/tournament' },
+    { id: 'tournament-page-m', address: '/tournament' },
+    { id: 'matches-page', address: '/matches' },
+    { id: 'matches-page-m', address: '/matches' },
+    { id: 'home-page-logo', address: '/home' }
 ];
 
-pages.forEach(({ id, path }) => {
+pages.forEach(({ id, address }) => {
     const element = document.getElementById(id);
     if (element) {
         element.addEventListener('click', function(event) {
             event.preventDefault();
-            history.pushState({}, '', path);
+            history.pushState({}, '', address);
         });
     }
 });
