@@ -1,23 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const contentDiv = document.querySelector('.content');
-    const navLinks = document.querySelectorAll('.nav-links');
+homePage = document.querySelector('.content')
+console.log(homePage)
 
-    const loadPage = (url) => {
-        fetch(url)
-            .then(response => response.text())
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const newContent = doc.querySelector('.content').innerHTML;
-            })
-    };
-
-    navLinks.forEach(el => {
-        el.addEventListener('click', (e) => {
-            e.preventDefault()
-
-            const url = e.currentTarget.getAttibute('href');
-            loadPage(url)
-        });
-    });
-});
+// setTimeout(() => {
+//   loadContent = () => {
+//     fetch('./html/Matches.html')
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('response is not ok')
+//         }
+//         return response.text()
+//       })
+//       .then(data => {
+//         const parser = new DOMParser()
+//         const innerPage = parser.parseFromString(data, 'text/html')
+//         console.log(innerPage.querySelector('.content'))
+//         homePage.innerHTML = innerPage.querySelector('.content').innerHTML
+//       })
+//       .catch(error => {
+//         console.error('Файл не загружен:', error)
+//       })
+//   }
+//   loadContent()
+//
+//   setTimeout(() => {
+//     loadContent = () => {
+//       fetch('index.html')
+//         .then(response => {
+//           if (!response.ok) {
+//             throw new Error('response is not ok')
+//           }
+//           return response.text()
+//         })
+//         .then(data => {
+//           const parser = new DOMParser()
+//           const innerPage = parser.parseFromString(data, 'text/html')
+//           console.log(innerPage.querySelector('.content'))
+//           homePage.innerHTML = innerPage.querySelector('.content').innerHTML
+//         })
+//         .catch(error => {
+//           console.error('Файл не загружен:', error)
+//         })
+//     }
+//     loadContent()
+//   }, 5000)
+// }, 5000)
