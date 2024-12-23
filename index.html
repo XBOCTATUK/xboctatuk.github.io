@@ -10,28 +10,59 @@
   <title>Geometry Major League</title>
 </head>
 <body>
-  <div class="nav">
-    <a id="home-page-logo" href="#" title="Перейти на главную страницу"><div class="logo">
+  <nav class="main-nav">
+    <a id="home-page-logo"
+       href="#"
+       title="Перейти на главную страницу">
+      <div class="logo">
       <img src="./image/gml cup.png" alt="#">
       <p class="logo-desktop">Geometry Major League</p>
       <p class="logo-mobile">GML</p>
-    </div></a>
-    <nav class="nav-desktop">
+    </div>
+    </a>
+    <div class="nav-desktop">
       <ul>
-        <li><a id="home-page" href="/home" class="nav-links" title="Перейти на главную страницу">Главная</a></li>
-        <li><a id="tournament-page" href="/tournament" class="nav-links" title="Посмотреть информацию о турнире">О турнире</a></li>
-        <li><a id="matches-page" href="/matches" class="nav-links" title="Посмотреть историю матчей и их итоги">Матчи</a></li>
+        <li>
+          <a id="home-page"
+             href="/home"
+             class="nav-links"
+             title="Перейти на главную страницу">Главная</a>
+        </li>
+        <li>
+          <a id="tournament-page"
+             href="/tournament"
+             class="nav-links"
+             title="Посмотреть информацию о турнире">О турнире</a>
+        </li>
+        <li>
+          <a id="matches-page"
+             href="/matches"
+             class="nav-links"
+             title="Посмотреть историю матчей и их итоги">Матчи</a>
+        </li>
       </ul>
-    </nav>
-    <nav class="nav-mobile">
+    </div>
+    <div class="nav-mobile">
       <button class="burger"><img src="./image/Burger.svg" alt="#"></button>
       <ul class="not-active">
-        <li><a id="home-page-m" class="nav-links" href="/home">Главная</a></li>
-        <li><a id="tournament-page-m" class="nav-links" href="/tournament">О турнире</a></li>
-        <li><a id="matches-page-m" class="nav-links" href="/matches">Матчи</a></li>
+        <li>
+          <a id="home-page-m"
+             href="/home"
+             class="nav-links">Главная</a>
+        </li>
+        <li>
+          <a id="tournament-page-m"
+             href="/tournament"
+             class="nav-links">О турнире</a>
+        </li>
+        <li>
+          <a id="matches-page-m"
+             href="/matches"
+             class="nav-links">Матчи</a>
+        </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <div class="content">
     <div class="content-left-pan">
@@ -41,7 +72,7 @@
         <p id="timer"></p>
       </div>
       <div class="last-match">
-        <p>НАШ ПОСЛЕДНИЙ МАТЧ:</p>
+        <h2>НАШ ПОСЛЕДНИЙ МАТЧ:</h2>
         <iframe
         width="480"
         height="270"
@@ -57,9 +88,11 @@
     </div>
     <div class="content-right-pan"></div>
   </div>
+
   <script src="./js/timer.js"></script>
   <script src="./js/address bar.js"></script>
   <script src="./js/change page.js"></script>
   <script src="./js/mobile nav.js"></script>
+
 </body>
 </html>

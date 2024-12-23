@@ -52,7 +52,7 @@
     margin-block: 16px;
     margin-inline: 14px;
 }
-.last-match>p {
+.last-match>h2 {
     font-family: Onest;
     font-weight: 800;
     font-size: 24px;
@@ -65,7 +65,7 @@ iframe {
     display: none;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .content-left-pan,
     .content-right-pan {
         display: none;
@@ -81,7 +81,7 @@ iframe {
         font-size: 16px;
     }
 }
-@media (max-width: 450px) { 
+@media (max-width: 450px) {
     iframe {
         width: 200px;
         height: 100px;
