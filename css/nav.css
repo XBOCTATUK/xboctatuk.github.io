@@ -1,143 +1,144 @@
 @font-face {
-    font-family: 'Onest';
-    src: url(../fonts/ONEST-BOLD.TTF) format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Onest';
+  src: url(../fonts/ONEST-BOLD.TTF) format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Onest';
-    src: url(../fonts/ONEST-EXTRABOLD.TTF) format('truetype');
-    font-weight: 800;
-    font-style: normal;
+  font-family: 'Onest';
+  src: url(../fonts/ONEST-EXTRABOLD.TTF) format('truetype');
+  font-weight: 800;
+  font-style: normal;
 }
 .not-active {
-    display: none;
+  display: none;
 }
 .is-active-block {
-    display: block;
+  display: block;
 }
 
 .main-nav {
-    background-color: #ffee00;
-    display: flex;
-    justify-content: space-between;
-    height: 45px;
-    padding-inline: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 500;
+  background-color: #ffee00;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding-inline: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
 }
 .main-nav>a {
-    display: flex;
+  display: flex;
 }
 .logo-mobile {
-    display: none;
+  display: none;
 }
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .logo>p {
-    font-family: Onest, ui-sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    padding-left: 15px;
-    color: black;
-    margin: 0;
+  font-family: Onest, ui-sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 15px;
+  color: black;
+  margin: 0;
 }
 .main-nav>a img {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
 .nav-desktop {
-    display: flex;
-    align-content: center;
-    height: 100%;
+  display: flex;
+  align-content: center;
+  height: 100%;
 }
 .nav-desktop>ul {
+  font-family: Onest, ui-sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.nav-desktop>ul>li {
+  height: 100%;
+
+}
+.nav-desktop>ul>li>a {
+  display: flex;
+  padding-inline: 12px;
+  height: 100%;
+  align-items: center;
+  color: black;
+  transition: 0.3s;
+}
+.nav-desktop>ul>li>a:hover {
+  background-color: #ffe600;
+  transition: 0.3s;
+}
+.nav-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    padding-inline: 0;
+    padding-left: 11.5px;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .burger>img {
+    height: 50%;
+    width: 100%;
+  }
+  .burger {
+    display: flex;
+    border: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    background-color: #ffee00;
+    width: 45px;
+  }
+  .nav-mobile>ul {
     font-family: Onest, ui-sans-serif;
     font-weight: bold;
     font-size: 12px;
     list-style: none;
     margin: 0;
+    margin-right: -12px;
     padding: 0;
     height: 100%;
     align-items: center;
+    position: absolute;
+    right: 12px;
+  }
+  .nav-mobile>ul>li>a {
     display: flex;
-    position: relative;
-}
-.nav-desktop>ul>li {
-    height: 100%;
-}
-.nav-desktop>ul>li>a {
-    display: flex;
+    background-color: #ffee00;
     padding-inline: 12px;
     height: 100%;
     align-items: center;
     color: black;
-    transition: 0.3s;
-}
-.nav-desktop>ul>li>a:hover {
-    background-color: #ffe600;
-    transition: 0.3s;
-}
-.nav-mobile {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .main-nav {
-        padding-inline: 0;
-        padding-left: 11.5px;
-    }
-    .nav-desktop {
-        display: none;
-    }
-    .nav-mobile {
-        display: block;
-    }
-    .burger>img {
-        height: 50%;
-        width: 100%;
-    }
-    .burger {
-        display: flex;
-        border: 0;
-        padding: 0;
-        align-items: center;
-        height: 100%;
-        cursor: pointer;
-        background-color: #ffee00;
-        width: 45px;
-    }
-    .nav-mobile>ul {
-        font-family: Onest, ui-sans-serif;
-        font-weight: bold;
-        font-size: 12px;
-        list-style: none;
-        margin: 0;
-        margin-right: -12px;
-        padding: 0;
-        height: 100%;
-        align-items: center;
-        position: absolute;
-        right: 12px;
-    }
-    .nav-mobile>ul>li>a {
-        display: flex;
-        background-color: #ffee00;
-        padding-inline: 12px;
-        height: 100%;
-        align-items: center;
-        color: black;
-        padding-block: 13.5px;
-    }
+    padding-block: 13.5px;
+  }
 }
 @media (max-width: 450px) {
-    .logo-mobile {
-        display: block;
-    }
-    .logo-desktop {
-        display: none;
-    }
+  .logo-mobile {
+    display: block;
+  }
+  .logo-desktop {
+    display: none;
+  }
 }
