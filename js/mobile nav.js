@@ -1,5 +1,6 @@
-navMobileMenu = document.querySelector('ul[class="not-active"]')
-navMobileButton = document.querySelector('.nav-mobile')
+navMobileMenu = document.querySelector('ul[class="main-nav__menu-list--mobile not-active"]')
+navMobileButton = document.querySelector('.main-nav__burger')
+console.log(navMobileMenu)
 
 navMobileButton.addEventListener('click', () => {
     navMobileClasses = navMobileMenu.classList

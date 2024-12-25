@@ -10,89 +10,38 @@
   <title>Geometry Major League</title>
 </head>
 <body>
-  <nav class="main-nav">
-    <a id="home-page-logo"
-       href="#"
-       title="Перейти на главную страницу">
-      <div class="logo">
-      <img src="./image/gml cup.png" alt="#">
-      <p class="logo-desktop">Geometry Major League</p>
-      <p class="logo-mobile">GML</p>
-    </div>
-    </a>
-    <div class="nav-desktop">
-      <ul>
-        <li>
-          <a id="home-page"
-             href="/"
-             class="nav-links"
-             title="Перейти на главную страницу">Главная</a>
-        </li>
-        <li>
-          <a id="tournament-page"
-             href="/"
-             class="nav-links"
-             title="Посмотреть информацию о турнире">О турнире</a>
-        </li>
-        <li>
-          <a id="matches-page"
-             href="/"
-             class="nav-links"
-             title="Посмотреть историю матчей и их итоги">Матчи</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-mobile">
-      <button class="burger"><img src="./image/Burger.svg" alt="#"></button>
-      <ul class="not-active">
-        <li>
-          <a id="home-page-m"
-             href="/"
-             class="nav-links">Главная</a>
-        </li>
-        <li>
-          <a id="tournament-page-m"
-             href="/"
-             class="nav-links">О турнире</a>
-        </li>
-        <li>
-          <a id="matches-page-m"
-             href="/"
-             class="nav-links">Матчи</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="content">
-    <div class="content-left-pan">
-    </div>
-    <div class="content-center">
-      <div class="announcement">
-        <p id="timer"></p>
+  <header>
+    <nav class="main-nav flex">
+      <a class="nav__button--hover" href="/">
+        <div class="main-nav__logo flex">
+          <img class="main-nav__logo__image" src="./image/gml%20cup.png" alt="Логотип - золотой кубок">
+          <p class="main-nav__logo__text--desktop main-nav__logo__text">Geometry Major League</p>
+          <p class="main-nav__logo__text--mobile main-nav__logo__text">GML</p>
+        </div>
+      </a>
+      <div class="main-nav__menu flex">
+        <div class="main-nav__menu--desktop">
+          <ul class="main-nav__menu-list--desktop flex">
+            <li class="main-nav__menu-item--desktop"><a href="/">Главная</a></li>
+            <li class="main-nav__menu-item--desktop"><a href="/">О турнире</a></li>
+            <li class="main-nav__menu-item--desktop"><a href="/">Матчи</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__menu--mobile">
+          <button class="main-nav__burger" type="button">
+            <img src="./image/Burger.svg" alt="">
+          </button>
+          <ul class="main-nav__menu-list--mobile not-active">
+            <li class="main-nav__menu-item--mobile"><a href="/">Главная</a></li>
+            <li class="main-nav__menu-item--mobile"><a href="/">О турнире</a></li>
+            <li class="main-nav__menu-item--mobile"><a href="/">Матчи</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="last-match">
-        <h2>НАШ ПОСЛЕДНИЙ МАТЧ:</h2>
-        <iframe
-        width="480"
-        height="270"
-        src="https://www.youtube-nocookie.com/embed/tVvrb3d9HgY?si=jQ_5f_452YDE-AC6"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-        </iframe>
-        <a href="https://www.youtube.com/watch?v=tVvrb3d9HgY"
-           target="_blank">
-          <img src="https://i.ytimg.com/vi/tVvrb3d9HgY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCRsUfVGVJkoRRzhY2nFx1ETFu4CQ"
-               alt="">
-        </a>
-      </div>
-    </div>
-    <div class="content-right-pan"></div>
-  </div>
+    </nav>
+  </header>
 
-  <script src="./js/timer.js"></script>
+<!--  <script src="./js/timer.js"></script>-->
 <!--  <script src="./js/address bar.js"></script>-->
   <script src="./js/change page.js"></script>
   <script src="./js/mobile nav.js"></script>
