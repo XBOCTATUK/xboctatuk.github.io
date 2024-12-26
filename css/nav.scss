@@ -31,50 +31,49 @@ a {
   a {
     color: black;
     align-content: center;
-
-    .main-nav__logo {
-      align-items: center;
-
-      .main-nav__logo__text {
-        font-family: Onest, ui-sans-serif;
-        font-weight: 800;
-        font-size: 20px;
-      }
-      .main-nav__logo__image {
-        width: var(--logo-size);
-        height: var(--logo-size);
-        margin-right: 15px;
-      }
-    }
   }
+}
+
+.main-nav__logo {
+  align-items: center;
+}
+.main-nav__logo__text {
+  font-family: Onest, ui-sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+.main-nav__logo__image {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  margin-right: 15px;
+}
 
 
-  .main-nav__menu {
-    .main-nav__menu-list--desktop {
-      height: var(--nav-height);
 
-      & li {
-        align-content: center;
+.main-nav__menu {
+    & li {
+      align-content: center;
+      transition-duration: 0.3s;
+
+      &:hover {
+        background-color: #ffe600;
         transition-duration: 0.3s;
+      }
 
-        &:hover {
-          background-color: #ffe600;
-          transition-duration: 0.3s;
-        }
-
-        & a {
-          font-family: Onest, ui-sans-serif;
-          font-weight: bold;
-          font-size: 12px;
-          display: block;
-          align-content: center;
-          color: black;
-          padding-inline: 12px;
-          height: var(--nav-height);
-        }
+      & a {
+        font-family: Onest, ui-sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        display: block;
+        align-content: center;
+        color: black;
+        padding-inline: 12px;
+        height: var(--nav-height);
       }
     }
   }
+.main-nav__menu-list--desktop {
+  height: var(--nav-height);
 }
 
 .main-nav__logo__text--mobile {
@@ -121,6 +120,16 @@ a {
   }
 }
 
+.flex {
+  display: flex;
+}
+.not-active {
+  display: none;
+}
+.is-active-block {
+  display: block;
+}
+
 @media (width <= 768px) {
   .main-nav__menu--mobile {
     display: flex;
@@ -132,16 +141,6 @@ a {
     padding-inline: 0;
     padding-left: 9px;
   }
-}
-
-.flex {
-  display: flex;
-}
-.not-active {
-  display: none;
-}
-.is-active-block {
-  display: block;
 }
 
 @media (width <= 480px) {
