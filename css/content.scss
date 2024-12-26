@@ -30,7 +30,7 @@
     font-weight: 800;
     font-size: 24px;
     text-align: center;
-    margin-inline: 5px;
+    margin: 5px;
   }
 }
 .panel-center__last-match {
@@ -52,12 +52,12 @@
 .content__panel-right {
   margin: 10px 10px 0 5px;
   border-radius: var(--panels-border-radius);
-  height: 100px;
+  height: 200px;
 }
 .content__panel-left {
   margin: 10px 5px 0 10px;
   border-radius: var(--panels-border-radius);
-  height: 100px;
+  height: 200px;
 }
 
 @media (width <= 768px) {
