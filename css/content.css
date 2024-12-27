@@ -3,7 +3,7 @@
   --panel-center-margin-block: 16px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  height: 200px;
+  height: 800px;
 }
 .content > * {
   background-color: rgb(217, 217, 217);
