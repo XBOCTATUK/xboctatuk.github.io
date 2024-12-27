@@ -19,11 +19,15 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
 .main-nav {
   background-color: #ffee00;
   height: var(--nav-height);
-  position: sticky;
-  top: 0;
   padding-inline: 15px;
   justify-content: space-between;
 }
@@ -88,6 +92,7 @@ a {
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  cursor: default;
 }
 .main-nav__menu--mobile button img {
   width: calc(var(--nav-height) * 0.6);

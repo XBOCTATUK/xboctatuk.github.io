@@ -3,10 +3,10 @@
   --panel-center-margin-block: 16px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  height: 200px;
+  position: sticky;
 }
 .content > * {
-  background-color: rgb(217, 217, 217);
+  background-color: rgb(238, 238, 238);
 }
 
 .content__panel-center {
@@ -19,7 +19,10 @@
 
 .panel-center__announcement-block {
   background-color: red;
+  border: 2px solid white;
   border-radius: var(--panels-border-radius);
+  position: sticky;
+  top: 55px;
   justify-content: center;
   align-items: center;
 }
@@ -49,13 +52,21 @@
 .content__panel-right {
   margin: 10px 10px 0 5px;
   border-radius: var(--panels-border-radius);
+  position: sticky;
+  top: 55px;
   height: 200px;
 }
 
 .content__panel-left {
   margin: 10px 5px 0 10px;
   border-radius: var(--panels-border-radius);
+  position: sticky;
+  top: 55px;
   height: 200px;
+}
+
+.transparent {
+  background-color: transparent;
 }
 
 @media (width <= 768px) {
